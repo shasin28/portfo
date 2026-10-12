@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: #333;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #667eea;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            margin: 3rem 0;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .project {
+            background: #f4f4f4;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .project h3 {
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+        }
+        
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill {
+            background: #667eea;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shalini</h1>
+        <p>Web Developer & Designer</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate web developer with expertise in creating beautiful and functional websites. I love turning ideas into reality through code and design.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of your first project goes here. Talk about the technologies used and what you learned.</p>
+            </div>
+            
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of your second project goes here. Highlight key features and your contributions.</p>
+            </div>
+            
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Description of your third project goes here. Explain the challenges you overcame.</p>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">MongoDB</div>
+                <div class="skill">Git</div>
+                <div class="skill">Design</div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me:</p>
+            <ul style="list-style: none; margin-top: 1rem;">
+                <li>📧 Email: your.email@example.com</li>
+                <li>🔗 LinkedIn: <a href="#">Your LinkedIn Profile</a></li>
+                <li>🐙 GitHub: <a href="#">Your GitHub Profile</a></li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Shalini. All rights reserved.</p>
+        <p>Built with passion and code</p>
+    </footer>
+</body>
+</html>
